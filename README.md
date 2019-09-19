@@ -12,6 +12,9 @@
 * Auto open when an exception is throw to instantly alert you of an error.
 * Multiple themes to choose from.
 
+# Release
+Get the latest release from the releases page : https://github.com/ArtOfSettling/dotCommand/releases
+
 # Building
 Simply open the solution under the solution folder in Jetbrains Rider and build! Your dlls should be automatically built into the Unity project under /unity/Assets/WellFired/WellFired.Command
 
