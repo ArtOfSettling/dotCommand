@@ -12,4 +12,7 @@
 * Auto open when an exception is throw to instantly alert you of an error.
 * Multiple themes to choose from.
 
-Please read the documentation at : https://dotcommand-documentation.readthedocs.io/en/latest/ for the latest information
+# Building
+Simply open the solution under the solution folder in Jetbrains Rider and build! Your dlls should be automatically built into the Unity project under /unity/Assets/WellFired/WellFired.Command
+
+Usage documentation available at : https://dotcommand-documentation.readthedocs.io/en/latest/ for the latest information
