@@ -25,7 +25,7 @@ namespace WellFired.Command.Unity.Runtime.Helpers
 	                if (Math.Abs(_width) > 0.00001f)
 	                    return _width;
 
-		            if (Event.current.type == EventType.layout)
+		            if (Event.current.type == EventType.Layout)
 		            {
 			            var style = UnityGui.Helper.SuggestionButtonStyle(_skinData);
 			            _width =  style.CalcSize(Content).x;

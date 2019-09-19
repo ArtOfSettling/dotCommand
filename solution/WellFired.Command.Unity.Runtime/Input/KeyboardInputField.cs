@@ -80,7 +80,7 @@ namespace WellFired.Command.Unity.Runtime.Input
 				var fakeEvent = new Event
 				{
 					keyCode = KeyCode.RightArrow,
-					type = EventType.keyDown
+					type = EventType.KeyDown
 				};
 				TextEditor.HandleKeyEvent(fakeEvent);
 			}
