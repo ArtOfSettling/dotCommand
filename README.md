@@ -15,4 +15,5 @@
 # Building
 Simply open the solution under the solution folder in Jetbrains Rider and build! Your dlls should be automatically built into the Unity project under /unity/Assets/WellFired/WellFired.Command
 
+# Using
 Usage documentation available at : https://dotcommand-documentation.readthedocs.io/en/latest/ for the latest information
