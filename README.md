@@ -1,5 +1,7 @@
 # .Command
 
+![Unity Command Line Tool](https://dotcommand-documentation.readthedocs.io/en/latest/_images/suggestions.svg)
+
 .Command is a powerful Command Line Processor and log viewer for Unity. Similar to tools you might see in unreal. It can be run in the editor or in a built out player for any platform, allowing you to see your log and callstacks in you final product, without having to search for unity log files.
 
 .Command has a small set of core features that make it a must have for any development team.
