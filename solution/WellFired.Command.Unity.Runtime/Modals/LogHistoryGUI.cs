@@ -50,7 +50,7 @@ namespace WellFired.Command.Unity.Runtime.Modals
 		{
 		    _scrollPosition = Helper.BeginScrollView(_skinData, _scrollPosition, GUILayout.ExpandHeight(true), GUILayout.Width(Screen.width));
 			
-			if (Event.current.type == EventType.scrollWheel && AutoScrolling)
+			if (Event.current.type == EventType.ScrollWheel && AutoScrolling)
 			{
 				_autoScrollingCancelled = true;
 			}
@@ -74,7 +74,7 @@ namespace WellFired.Command.Unity.Runtime.Modals
 				    case EventType.MouseUp:
 					    _mouseDown = false;
 					    break;
-				    case EventType.mouseDrag:
+				    case EventType.MouseDrag:
 					    _delta += Event.current.delta;
 					    break;
 			    }

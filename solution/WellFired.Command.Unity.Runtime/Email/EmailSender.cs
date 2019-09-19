@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 
 namespace WellFired.Command.Unity.Runtime.Email
 {
@@ -24,7 +25,7 @@ namespace WellFired.Command.Unity.Runtime.Email
 		
 		private static string MyEscapeUrl (string url)
 		{
-			return WWW.EscapeURL(url).Replace("+","%20");
+			return UnityWebRequest.EscapeURL(url).Replace("+","%20");
 		}
 		
 		public static string Base64Encode(string plainText) 

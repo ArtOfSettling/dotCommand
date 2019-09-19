@@ -12,16 +12,13 @@ namespace WellFired.Command.Unity.Runtime.UnityGui
                 case RuntimePlatform.OSXEditor:
                 case RuntimePlatform.OSXPlayer:
                 case RuntimePlatform.WindowsPlayer:
-                case RuntimePlatform.OSXDashboardPlayer:
                 case RuntimePlatform.WindowsEditor:
                 case RuntimePlatform.LinuxPlayer:
                 case RuntimePlatform.LinuxEditor:
                 case RuntimePlatform.WebGLPlayer:
-                case RuntimePlatform.TizenPlayer:
                 case RuntimePlatform.PS4:
                 case RuntimePlatform.XboxOne:
                     return true;
-                case RuntimePlatform.SamsungTVPlayer:
                 case RuntimePlatform.tvOS:
                 case RuntimePlatform.Switch:
                 case RuntimePlatform.Android:
