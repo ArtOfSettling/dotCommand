@@ -4,6 +4,22 @@
 
 .Command is a powerful Command Line Processor and log viewer for Unity — inspired by similar tools in Unreal Engine. It runs in both the Unity Editor and built players for any platform, letting you inspect logs and call stacks in production builds without digging through log files.
 
+It also allows you to execute any runtime code in your game with a button press.
+
+## Getting Started
+
+1. Grab the latest release from the [GitHub Releases Page](https://github.com/ArtOfSettling/dotCommand/releases).
+2. Import the unity package into your unity project.
+3. Drag the WellFired/WellFired.Command/Platform/Prefabs/DebugConsoleLoader.prefab into any scene and you are done!
+
+Read more on how to use .command
+1. [Programmatic Instantiation](https://dotcommand-documentation.readthedocs.io/en/latest/learn/step_by_step/quick_start.html)
+2. [Exposing Custom Commands](https://dotcommand-documentation.readthedocs.io/en/latest/learn/step_by_step/custom_commands.html#introduction)
+3. [Adding Custom Log Levels](https://dotcommand-documentation.readthedocs.io/en/latest/learn/step_by_step/logs_and_filters.html#introduction)
+4. [Built in commands](https://dotcommand-documentation.readthedocs.io/en/latest/learn/step_by_step/built_in_commands.html)
+
+---
+
 ## Features
 
 - View your application's log in real time — in Editor or built Player.
@@ -12,12 +28,6 @@
 - Email call stacks or full logs with one click.
 - Auto-open on exceptions to catch issues fast.
 - Multiple UI themes available.
-
----
-
-## Release
-
-Grab the latest release from the [GitHub Releases Page](https://github.com/ArtOfSettling/dotCommand/releases).
 
 ---
 
