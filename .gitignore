@@ -1,2 +1,10 @@
 /node_modules/
 *.DS_Store
+/.idea/libraries/Generated_files.xml
+/.idea/.gitignore
+/.idea/encodings.xml
+/.idea/indexLayout.xml
+/.idea/vcs.xml
+/.idea/watcherTasks.xml
+/unity/unity.sln.DotSettings
+/unity/unity.sln.DotSettings.user

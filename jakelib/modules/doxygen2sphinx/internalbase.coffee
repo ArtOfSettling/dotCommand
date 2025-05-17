@@ -1,5 +1,5 @@
-xmlhelper       = require('./xmlhelper')
-util            = require('util')
+xmlhelper = require('./xmlhelper')
+util = require('util')
 
 class Internal
     xmlHelper: undefined
@@ -157,6 +157,7 @@ class Internal
 class Enum extends Internal
 
     constructor: (@xmlHelper, @memberDef) ->
+        super {}
         this.id = this.cleanEnumId @xmlHelper.convertId @memberDef['@'].id
         this.readableName = (@xmlHelper.buildRepresentation @memberDef, 'name')[0].elements
         this.briefDescription = this.xmlHelper.buildRepresentation @memberDef, 'briefdescription'
@@ -197,8 +198,9 @@ class Enum extends Internal
 
 class Interface extends Internal
 
-    constructor: (@xmlData) ->
-        super @xmlData
+    constructor: (xmlData) ->
+        super xmlData
+        @xmlData = xmlData
 
     get: ->
         return {
@@ -215,8 +217,9 @@ class Interface extends Internal
 
 class Namespace extends Internal
 
-    constructor: (@xmlData) ->
-        super @xmlData
+    constructor: (xmlData) ->
+        super xmlData
+        @xmlData = xmlData
 
     get: ->
         return { 
@@ -234,8 +237,9 @@ class Namespace extends Internal
 class Class extends Internal
     sections: []
 
-    constructor: (@xmlData) ->
-        super @xmlData
+    constructor: (xmlData) ->
+        super xmlData
+        @xmlData = xmlData
 
     get: ->
         return { 

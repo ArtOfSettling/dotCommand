@@ -2,21 +2,86 @@
 
 ![Unity Command Line Tool](https://dotcommand-documentation.readthedocs.io/en/latest/_images/suggestions.svg)
 
-.Command is a powerful Command Line Processor and log viewer for Unity. Similar to tools you might see in unreal. It can be run in the editor or in a built out player for any platform, allowing you to see your log and callstacks in you final product, without having to search for unity log files.
+.Command is a powerful Command Line Processor and log viewer for Unity — inspired by similar tools in Unreal Engine. It runs in both the Unity Editor and built players for any platform, letting you inspect logs and call stacks in production builds without digging through log files.
 
-.Command has a small set of core features that make it a must have for any development team.
-* Fully view your applications log, as you would in Unity in any built out player.
-* Strong filtering and searching functionality from with the global log, which works in Editor and in Player.
-* Expose any C# Method or Property to a simple UI, exposing them to touch or click.
-* Email any callstack or full log to any email address at the touch of a button.
-* Auto open when an exception is throw to instantly alert you of an error.
-* Multiple themes to choose from.
+## Features
 
-# Release
-Get the latest release from the releases page : https://github.com/ArtOfSettling/dotCommand/releases
+- View your application's log in real time — in Editor or built Player.
+- Powerful filtering and search across logs.
+- Expose any C# method or property via a simple UI for in-game or in-editor use.
+- Email call stacks or full logs with one click.
+- Auto-open on exceptions to catch issues fast.
+- Multiple UI themes available.
 
-# Building
-Simply open the solution under the solution folder in Jetbrains Rider and build! Your dlls should be automatically built into the Unity project under /unity/Assets/WellFired/WellFired.Command
+---
 
-# Using
-Usage documentation available at : https://dotcommand-documentation.readthedocs.io/en/latest/ for the latest information
+## Release
+
+Grab the latest release from the [GitHub Releases Page](https://github.com/ArtOfSettling/dotCommand/releases).
+
+---
+
+## Dev Environment Setup
+
+If you're contributing or building the Unity package yourself, follow these steps:
+
+### Prerequisites
+
+- Unity (6.1 LTS or newer recommended)
+- Node.js (we recommend using [nvm](https://github.com/nvm-sh/nvm) to install)
+
+```bash
+nvm install --lts
+nvm use --lts
+```
+
+### Install Build Tools
+
+Install Jake (task runner) and CoffeeScript compiler:
+
+```bash
+npm install -g jake coffeescript
+```
+
+> **Note:** Global install is required for CLI commands like `jake` to work in terminal.
+
+### Verify Setup
+
+Run the following to list available tasks:
+
+```bash
+jake -T
+```
+
+To build the Unity `.unitypackage` export:
+
+```bash
+jake unity:export-package -c
+```
+
+This will print a message like:
+
+```
+[INFO] Using unity path: /Applications/Unity/Hub/Editor/...
+```
+
+The built `.unitypackage` will be located under the `unity/` directory.
+
+---
+
+## Using the Unity Project
+
+You can also just open the Unity project located at `/unity/` in the Unity Hub to explore or test the package in action.
+
+---
+
+## Input System Compatibility
+
+.Command supports toggling the in-game console with the backquote key (`` ` ``). If you're using Unity's **new Input System**, make sure to:
+
+---
+
+## Documentation
+
+Full usage docs and API reference are available at:  
+📖 [https://dotcommand-documentation.readthedocs.io/en/latest/](https://dotcommand-documentation.readthedocs.io/en/latest/)

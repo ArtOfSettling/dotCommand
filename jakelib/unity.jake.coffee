@@ -6,6 +6,37 @@ wtask = require('./tasks').wtask
 
 
 namespace 'unity', ->
+    desc 'Builds a .unitypackage using Unity CLI'
+    wtask 'export-package', { async: true }, ->
+
+        unityPath = process.env.UNITY_PATH || utils.getLatestUnityPath()
+        projectPath = "#{__dirname}/../unity"  # Adjust as needed
+        method = 'BuildScript.ExportUnityPackage'
+
+        if !unityPath?
+            WellFired.error("No Unity path found. Set UNITY_PATH env var or install Unity via Hub.")
+            return
+
+        WellFired.info "Using unity path : #{unityPath}"
+
+        args = [
+            unityPath
+            '-quit'
+            '-batchmode'
+            '-nographics'
+            "-projectPath \"#{projectPath}\""
+            "-executeMethod #{method}"
+        ].join(' ')
+
+        WellFired.info "Running Unity: #{args}"
+
+        exec = require('child_process').exec
+        exec args, (err, stdout, stderr) ->
+            if err
+                WellFired.error "Error: #{stderr}"
+            else
+                WellFired.info stdout
+                complete()
 
     desc 'Upgrades the Unity dependencies. Requires version argument, eg. [5.3.1f1]'
     wtask 'upgrade', (ver) ->
