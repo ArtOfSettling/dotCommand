@@ -1,0 +1,3 @@
+[submodule "unity/Packages/com.phantombit.command"]
+	path = unity/Packages/com.phantombit.command
+	url = git@github.com:ArtOfSettling/UnityInGameConsoleUPM.git
