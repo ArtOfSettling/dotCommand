@@ -1,11 +1,11 @@
 {
-  "name": "WellFired.Platformer",
+  "name": "com.phantombit.command",
   "version": "1.0.0",
   "private": true,
   "author": "WellFired",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org/TerryDrever/wellfired.platformer.git"
+    "url": "git@github.com:ArtOfSettling/UnityInGameConsole.git"
   },
   "devDependencies": {
     "aws-sdk": "^2.266.1",

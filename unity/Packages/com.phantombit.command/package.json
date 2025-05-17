@@ -1,0 +1,14 @@
+{
+  "name": "com.phantombit.command",
+  "version": "1.0.0",
+  "displayName": ".Command - Runtime Console & Inspector",
+  "description": "In-game log viewer, runtime inspector, command system, and log exporter for Unity.",
+  "unity": "2020.3",
+  "dependencies": {},
+  "keywords": ["console", "inspector", "debug", "logs", "runtime", "unity", "logging", "tools"],
+  "license": "MIT",
+  "author": {
+    "name": "PhantomBit",
+    "url": "https://github.com/ArtOfSettling/UnityInGameConsole"
+  }
+}

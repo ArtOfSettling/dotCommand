@@ -6,5 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/WellFired/WellFired.Command/Platform/Scenes/_Bootstrap.unity
+    path: Packages/com.phantombit.command/Runtime/Platform/Scenes/_Bootstrap.unity
     guid: c77e8922bc3647aa59499968648709f1
+  m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
