@@ -1,5 +1,7 @@
 jetpack = require('fs-jetpack')
-touch   = require('touch')
+touch = require('touch')
+fs = require('fs')
+path = require('path')
 
 module.exports = {
 
@@ -136,4 +138,13 @@ module.exports = {
 
     fileExtension: (filename) ->
         return filename.split('.').pop();
+
+    getLatestUnityPath: () ->
+        baseDir = '/Applications/Unity/Hub/Editor'
+        if fs.existsSync(baseDir)
+            versions = fs.readdirSync(baseDir).sort().reverse()
+            for v in versions
+                unityBin = path.join(baseDir, v, 'Unity.app/Contents/MacOS/Unity')
+                return unityBin if fs.existsSync(unityBin)
+        return null
 }
