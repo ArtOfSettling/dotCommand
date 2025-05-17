@@ -2,22 +2,35 @@
 
 ![Unity Command Line Tool](https://dotcommand-documentation.readthedocs.io/en/latest/_images/suggestions.svg)
 
-.Command is a powerful Command Line Processor and log viewer for Unity — inspired by similar tools in Unreal Engine. It runs in both the Unity Editor and built players for any platform, letting you inspect logs and call stacks in production builds without digging through log files.
+A powerful runtime command console and in-game inspector for Unity. It works across all platforms and brings advanced debugging and tooling features directly into your live game builds.
 
-## Features
+## Key Features
 
-- View your application's log in real time — in Editor or built Player.
-- Powerful filtering and search across logs.
-- Expose any C# method or property via a simple UI for in-game or in-editor use.
-- Email call stacks or full logs with one click.
-- Auto-open on exceptions to catch issues fast.
-- Multiple UI themes available.
+- **In-Game Log Viewer**  
+  View and search your Unity logs while the game is running, without digging into log files — works in Editor and Player builds.
+
+- **Runtime GameObject Inspector**  
+  Explore active GameObjects and their components, fields, and properties live on any platform — including mobile and console.
+
+- **Smart Commands & Auto-Complete**  
+  Annotate C# methods and properties with attributes to generate interactive console buttons. Supports autocomplete, nested paths, and parameterized calls.
+
+- **Email Logs from Device**  
+  Instantly export and email logs or callstacks from any platform — perfect for remote testing and QA workflows.
 
 ---
 
-## Release
+## Getting Started
 
-Grab the latest release from the [GitHub Releases Page](https://github.com/ArtOfSettling/dotCommand/releases).
+1. Grab the latest release from the [GitHub Releases Page](https://github.com/ArtOfSettling/dotCommand/releases).
+2. Import the unity package into your unity project.
+3. Drag the WellFired/WellFired.Command/Platform/Prefabs/DebugConsoleLoader.prefab into any scene and you are done!
+
+Read more on how to use .command
+1. [Programmatic Instantiation](https://dotcommand-documentation.readthedocs.io/en/latest/learn/step_by_step/quick_start.html)
+2. [Exposing Custom Commands](https://dotcommand-documentation.readthedocs.io/en/latest/learn/step_by_step/custom_commands.html#introduction)
+3. [Adding Custom Log Levels](https://dotcommand-documentation.readthedocs.io/en/latest/learn/step_by_step/logs_and_filters.html#introduction)
+4. [Built in commands](https://dotcommand-documentation.readthedocs.io/en/latest/learn/step_by_step/built_in_commands.html)
 
 ---
 
